@@ -1,58 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
         <title>Google</title>
         <link rel="shortcut icon" href="./images/googleicon.png">
         <style>
-                .text {
+		.text {
                             color:#000;
                             font-size:13px;
                             text-decoration:none;
-                      }      
-                a {
+		  }      
+		a {
                      color:#000;
-               }
-                a:hover {
-                       text-decoration:underline;
-                }
-                .search {
-                                position:relative;
-                                max-width:582px;
-                                height:40px;
-                                margin:20px auto;
-                                box-shadow: 0 0 0 1px #ccc;
-                                border-radius;24px;
-                            }
-                .search:hover{
-                        box-shadow:0 0  4px 0 #ccc;
-                        }
-
+		 }
+		a:hover {
+			text-decoration:underline;
+		}
+		.searchbar{
+			background-color:#fff;
+			border-radius:50px;
+			border:1px solid #ccc;
+			padding:5px;
+			width:530px;
+			height:30px;
+			transistion:
+		}
+		.searchbar:hover{
+			box-shadow:0px 0px 10px #CCC;
+		}
+		input{
+			outline:none;
+		}
+		.button{
+			border:none;
+			background-color:#f8f9fa;
+			border-radisu:5px;
+			padding:8px;
+			padding-left:15px;
+			padding-right:15px;
+			cursor:pointer;
+			}
+		.button:hover{
+			box-shadow: 1px 1px 1px #ccc;
         </style>
     </head>
 
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q" value="sly jinming">
         <table align=right colspan="1">
             <tr>
-                    <td  align="right">
+                    <td  width="95px" align="right">
                         <a class="text" href="https://images.google.com.hk/">Images</a>
-                        &nbsp;&nbsp;
+		</td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+		<td>
                         <a class="text" href="https://www.google.com.hk/advanced_search">Advanced</a>
                      </td>
-	  <tr>
+	  </tr>
             <br>
             </table>
+
+	<br>
         <center style="margin-top:11%;">
         <img src="./images/googlelogo.png">
            
          <br><br>
          
-        <form method="get" action="https://google.com/search" >
-            <input type="text" name="q" >
-            <input type="submit" value="Google Search">
+        <form method="get" action="https://google.com/search"  align="left" class="searchbar">
+            <table colspan="1" width="100%" cellspacing="3" cellpadding="0">
+		<tr align="left" colspan=0>
+			<td>
+				<img src="./images/searchicon.png" style="height:27.5px;"/>
+			<td>
+			<td width="95%">
+				<input type="text" autofocus autocomplete="off" name="s" style="width:100%;height:100%;border:0;padding:3px;background:#fff;border-radius:10px;">
+			</td>
+			<td>
+				<img src="./images/microicon.png" style="height:27.5px;"/>
+			</td>
+		</tr>
+	</table>
         </form>
+
+	<br>
+	<div>
+		<input type="button" class="button" onclick="location.href='https://www.google.com/'" value="Google Search">&nbsp;
+		<input type="button" class="button" onclick="location.href='https://www.google.com/doodles/'" value="I'm Feeling Lucky">
+	</div>
+
+	<br><br>
         </center>
     </body>
 </html>
