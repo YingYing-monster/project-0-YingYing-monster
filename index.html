@@ -2,11 +2,57 @@
 <html lang="en">
     <head>
         <title>Search</title>
+        <title>Google</title>
+        <link rel="shortcut icon" href="./images/googleicon.png">
+        <style>
+                .text {
+                            color:#000;
+                            font-size:13px;
+                            text-decoration:none;
+                      }      
+                a {
+                     color:#000;
+               }
+                a:hover {
+                       text-decoration:underline;
+                }
+                .search {
+                                position:relative;
+                                max-width:582px;
+                                height:40px;
+                                margin:20px auto;
+                                box-shadow: 0 0 0 1px #ccc;
+                                border-radius;24px;
+                            }
+                .search:hover{
+                        box-shadow:0 0  4px 0 #ccc;
+                        }
+
+        </style>
     </head>
+
     <body>
         <form action="https://google.com/search">
             <input type="text" name="q" value="sly jinming">
+        <table align=right colspan="1">
+            <tr>
+                    <td  align="right">
+                        <a class="text" href="https://images.google.com.hk/">Images</a>
+                        &nbsp;&nbsp;
+                        <a class="text" href="https://www.google.com.hk/advanced_search">Advanced</a>
+                     </td>
+	  <tr>
+            <br>
+            </table>
+        <center style="margin-top:11%;">
+        <img src="./images/googlelogo.png">
+           
+         <br><br>
+         
+        <form method="get" action="https://google.com/search" >
+            <input type="text" name="q" >
             <input type="submit" value="Google Search">
         </form>
+        </center>
     </body>
 </html>
