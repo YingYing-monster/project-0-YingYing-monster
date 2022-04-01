@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Image Search</title>
+        <link rel="shortcut icon" href="./images/googleicon.png">
+        <style>
+		.text {
+                            color:#000;
+                            font-size:13px;
+                            text-decoration:none;
+		  }      
+		a {
+                     color:#000;
+		 }
+		a:hover {
+			text-decoration:underline;
+		}
+		.searchbar{
+			background-color:#fff;
+			border-radius:50px;
+			border:1px solid #ccc;
+			padding:5px;
+			width:530px;
+			height:30px;
+			transistion:
+		}
+		.searchbar:hover{
+			box-shadow:0px 0px 10px #CCC;
+		}
+		input{
+			outline:none;
+		}
+		.button{
+			border:none;
+			background-color:#f8f9fa;
+			border-radisu:5px;
+			padding:8px;
+			padding-left:15px;
+			padding-right:15px;
+			cursor:pointer;
+			}
+		.button:hover{
+			box-shadow: 1px 1px 1px #ccc;
+		.ima{
+			color:#4285f4;
+		}
+		.logo{
+			max-height:100%;
+			max-width:100%;
+			object-fit:contain;
+			object-position:center bottom;
+			width:auto;} 
+        </style>
+    </head>
+
+    <body>
+        <table align=right colspan="1">
+            <tr>
+                    <td  width="95px" align="right">
+                        <a class="text" href="./index.html">Text</a>
+		</td>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+		<td>
+                        <a class="text" href="https://www.google.com.hk/advanced_search">Advanced</a>
+                     </td>
+	  </tr>
+            <br>
+            </table>
+
+	<br>
+
+	<center style="margin-top:11%;">
+        <img class="logo" height="92" src="./images/googlelogo.png" >
+         <span style="color:#4285F4;font:16px/16px roboto-regular, arial, sans-serif;left:800px ">Images</span>  
+         <br><br>
+         
+        <form method="get" action="https://google.com/search"  align="left" class="searchbar">
+            <table colspan="1" width="100%" cellspacing="3" cellpadding="0">
+		<tr align="left" colspan=0>
+			<td>
+				<img src="./images/searchicon.png" style="height:27.5px;"/>
+			<td>
+			<td width="95%">
+				<input type="text" autofocus autocomplete="off" name="q" style="width:100%;height:100%;border:0;padding:3px;background:#fff;border-radius:10px;">
+			</td>
+			<td>
+				<input type="hidden" name="tbm" value="isch">
+			</td>
+			<td>
+				<img src="./images/camera.png" style="height:27px;"/>
+			</td>
+			<td>
+				<img src="./images/microicon.png" style="height:27.5px;"/>
+			</td>
+		</tr>
+	</table>
+        </form>
+
+	<br>
+	
+	<br><br>
+	</center>
+    </body>
+</html>
